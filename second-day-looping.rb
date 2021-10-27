@@ -64,10 +64,8 @@ end
 
 # next - Jumps to the next iteration of the most internal loop
 for i in 0..5
-   if i < 2 then
-      next
-   end
-   puts "Value of local variable is #{i}"
+   next if i%2 == 0
+   puts i
 end
 
 # redo - Restarts this iteration of the most internal loop, without checking loop condition
@@ -94,3 +92,11 @@ rescue
    retry  # restart from beginning
 end
 =end
+
+# to iterate over an array in Ruby we use the .each method
+(0...5).to_a.each do |x|
+  puts "This is the #{x}th element"
+end
+
+# Ruby times method
+5.times { puts "My name is Chris"}
