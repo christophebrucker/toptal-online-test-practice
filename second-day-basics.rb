@@ -38,5 +38,24 @@ x = 10
 # Float Value
 y = 10.2
 
+# .upcase to return a string in all uppercase
+puts "Hello".upcase
+
+# .downcase to retunr a string in all downcase
+puts "HELLO".downcase
+
+
+# gets to retrieve the user input
+#.chomp to remove the extraline
+puts "Write something"
+a = gets.chomp
+puts a
+
+# string interpolation
+print 'You wrote : '
+print '" '
+print "#{a}"
+puts ' "'
+
 
 
