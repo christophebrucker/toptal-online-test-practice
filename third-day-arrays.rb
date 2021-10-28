@@ -3,6 +3,7 @@ def solution(a)
   # write your code in Ruby 2.2
   inversions = 0
   a.each do |x|
+    break if a.index(x) == a.length - 1
     p = a.index(x)
     q = p + 1
     puts "indexes #{p} & #{q}"
